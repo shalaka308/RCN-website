@@ -1,0 +1,99 @@
+.title {
+	@include font-rem(24px, 28px);
+}
+
+.contact-content {
+	p {
+		@include font-rem(19px, 22px);
+		@include bp(mobile) {
+			@include font-rem(16px, 19px);
+		}
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	ul,
+	ol {
+		li {
+			@include font-rem(19px, 22px);
+			@include bp(mobile) {
+				@include font-rem(16px, 19px);
+			}
+		}
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+	}
+}
+
+.frm_style_formidable-style {
+	margin-top: 40px;
+	@include bp(mobile) {
+		margin-top: 60px;
+	}
+	&.with_frm_style.frm_forms {
+		max-width: 60%;
+		@media (max-width: 1024px) {
+			max-width: 100%;
+		}
+		.frm_primary_label {
+			@include font-rem(16px, 19px);
+			color: #1d1d1b;
+			padding-bottom: 6px;
+			font-weight: 500;
+		}
+		.frm_submit {
+			button {
+				background-color: color(secondary, base);
+				color: #fff;
+				border-color: transparent;
+				padding: 6px 26px 5px;
+				margin: 0;
+				border-radius: 2px;
+				transition: 0.3s;
+				@include font-rem(16px, 22px);
+				border: 1px solid color(secondary, base);
+				@media (max-width: 767px) {
+					width: 100%;
+				}
+				&:hover {
+					background: #fff;
+					color: color(secondary, base);
+				}
+			}
+		}
+		input[type="text"],
+		input[type="email"],
+		select {
+			height: 35px;
+			@include bp(mobile) {
+				height: 45px;
+			}
+		}
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			font-weight: 500;
+			border-radius: 2px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			&:focus {
+				border-color: color(secondary, base);
+				box-shadow: none;
+			}
+		}
+		.frm_error {
+		}
+		textarea {
+			@include bp(mobile) {
+				min-height: 200px;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.banner-section {
+    background-image: url("../images/banner-section/banner.jpg");
+    background-size: cover;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    .ban-title {
+        color: #fff;
+    }
+
+    .ban-para {
+        color: #fff;
+    }
+
+    .ban-wrap {
+        position: relative;
+        top: 75%;
+        width: 75%;
+    }
+}

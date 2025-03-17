@@ -1,0 +1,30 @@
+// ==========================================================================
+//  Site Button Component
+//  ==========================================================================
+
+.btn {
+	padding: 10px 16px;
+	@include font-rem(14px, 20px);
+	border-width: 2px !important;
+	box-shadow: none !important;
+	text-transform: uppercase;
+	border-radius: 20px;
+	color: #fff !important;
+	cursor: pointer;
+
+	&.btn-blue {
+		background-color: color(primary, ps_secondary);
+	}
+
+	&.btn-white {
+		background-color: #fff;
+		color: #000 !important;
+	}
+
+	&.btn-grad {
+		background: #fe8c00;
+		background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+		border-radius: 20px;
+		background: linear-gradient(to right, #f83600, #fe8c00);
+	}
+}

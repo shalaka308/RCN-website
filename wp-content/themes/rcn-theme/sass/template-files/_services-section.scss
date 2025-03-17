@@ -1,0 +1,29 @@
+.service-section {
+    .servi-content {
+        text-align: center;
+    }
+
+    .service-section-wrap {
+        text-align: center;
+        background-color: transparent;
+        padding: 30px 30px 40px 30px;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+        border-style: solid;
+        border-width: 0px 0px 0px 0px;
+        background: #fe8c00;
+        background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+        border-radius: 20px;
+        background: linear-gradient(to right, #f83600, #fe8c00);
+        margin: 50px 0;
+        color: #fff;
+
+        i {
+            font-size: 56px;
+            width: 100px;
+        }
+        h4 {
+            min-height: 85px;
+            margin-top: 20px;
+        }
+    }
+}

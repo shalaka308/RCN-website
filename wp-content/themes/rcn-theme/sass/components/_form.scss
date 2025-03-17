@@ -1,0 +1,52 @@
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input::-ms-clear {  display: none; width : 0; height: 0; }
+input::-ms-reveal {  display: none; width : 0; height: 0; }
+
+// input[type=number] {
+//     -moz-appearance:textfield;
+// }
+
+input[type="number"] {
+	padding: 1px 15px;
+	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	opacity: 0;
+	-webkit-appearance: inner-spin-button;
+	margin-right: -15px;
+}
+
+input[type=number]:hover::-webkit-inner-spin-button,
+input[type=number]:hover::-webkit-outer-spin-button {
+	opacity: 1;
+}
+
+select {
+   -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    width:172px;
+    height:22px;
+    padding:2px 7px;
+    border:none;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 10px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+

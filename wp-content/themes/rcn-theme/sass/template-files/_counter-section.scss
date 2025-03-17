@@ -1,0 +1,11 @@
+.counter-section {
+    background-color: color(primary, ps_secondary);
+    padding: 110px 0;
+    color: #fff;
+    text-align: center;
+
+    .counter {
+        animation-duration: 1s;
+        animation-delay: 0s;
+    }
+}

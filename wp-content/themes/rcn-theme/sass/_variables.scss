@@ -1,0 +1,88 @@
+/* ==========================================================================
+  COMMON VARIABLES
+  ========================================================================== */
+
+// Color variable map
+$colors: (
+  // non-nested values
+  background: #ffffff,
+  border: #c9d4e2,
+  failure: rgba(199, 28, 28, 0.73),
+  success: #00ac57,
+  warning: #ea9f12,
+  // nested map inception
+  primary:
+    (
+      ps_base: #000000,
+      ps_secondary: #00173a,
+      ps_orange: #f96c00
+    ),
+  secondary: (
+    bg-orange: #f2c994,
+    tagermine-orange: #e27f29,
+    grey: #d9d9d9,
+    silver-gray: #dedede
+  )
+);
+
+// Usage
+// .header{
+//   color: color(primary,base); //Nested
+//   color: color(footer);//Direct
+// }
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// ==========================================================================
+//  COMPONENT SPECIFIC VARIABLES
+//  ==========================================================================
+
+// TYPOGRAPHY
+//   ==========================================================================
+$htmlFontSize: 16px;
+$baseFontSize: 16px;
+// $avenirBlack: 'Avenir Black', sans-serif;
+// $avenirBook: 'Avenir Book', sans-serif;
+// $avenirRoman: 'Avenir Roman', sans-serif;
+// $avenirHeavy: 'Avenir Heavy', sans-serif;
+// $avenirLight: 'Avenir Light', sans-serif;
+// $avenirMedium: 'Avenir Medium', sans-serif;
+
+// $avenirltstdBlack: 'Avenir Black', sans-serif;
+// $avenirltstdBook: 'Avenir Book', sans-serif;
+// $avenirltstdRoman: 'Avenir Roman', sans-serif;
+// $avenirltstdHeavy: 'Avenir Heavy', sans-serif;
+// $avenirltstdLight: 'Avenir Light', sans-serif;
+// $avenirltstdMedium: 'Avenir Medium', sans-serif;
+
+$baseFontFamily: "Poppins", sans-serif;
+$baseHeadingFont: "Poppins", sans-serif;
+$subHeadingFont: "Poppins", sans-serif;
+
+// $baseFontFamily: $avenirltstdBook;
+// $baseHeadingFont: $avenirltstdMedium;
+// $subHeadingFont: $avenirltstdMedium;
+
+//$font-awesome: 'FontAwesome';
+$font-awesome: "Font Awesome 5 Free";
+$baseLineHeight: 28px;
+$baseTextColor: #333333;
+
+$primaryColor: #424349;
+$secondaryColor: #d8bb41;
+
+// ==========================================================================
+//  MIN HEIGHT FOR CONTAINER
+//  ==========================================================================
+$min-height-desktop: 85vh;
+$min-height-mobile: 80vh;
+
+// $primary: #015E30;
+// $secondary: #22523A;
+// $lato: 'Lato', sans-serif;

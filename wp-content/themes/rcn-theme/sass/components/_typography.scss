@@ -1,0 +1,175 @@
+/* ==========================================================================
+  Base Typography Styles
+  ========================================================================== */
+
+/* ==========================================================================
+   Base Type
+   ========================================================================== */
+* {
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  &:focus,
+  &:active,
+  &:hover {
+    &::-moz-focus-inner {
+      border: 0;
+    }
+    outline: 0;
+  }
+}
+
+html {
+  @include font-rem($htmlFontSize);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: color(background);
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  color: $baseTextColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+  p {
+    @include font-rem(14px, 19px);
+    line-height: $baseLineHeight;
+    font-family: $baseFontFamily;
+    font-weight: 500;
+    @include bp(mobile) {
+      @include font-rem(13px, 17px);
+    }
+  }
+
+  @include bp(tablet-sm) {
+    padding-top: 50px;
+  }
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: $baseFontFamily;
+}
+
+/* ==========================================================================
+   Headings and paragraph
+   ========================================================================== */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-style: normal;
+  font-family: $baseHeadingFont;
+  // @extend %baseSpacing;
+}
+
+h1,
+.h1 {
+  @include font-rem(64px, 68px);
+  font-weight: 900;
+  @include bp(tablet-sm) {
+    @include font-rem(52px, 60px);
+  }
+}
+
+h2,
+.h2 {
+  @include font-rem(52px, 55px);
+  font-weight: 700;
+  padding-bottom: 15px;
+  color: color(primary, ps_secondary);
+
+  @include bp(tablet-sm) {
+    @include font-rem(26px, 28px);
+  }
+}
+
+h3,
+.h3 {
+  @include font-rem(40px, 45px);
+  @include bp(tablet-sm) {
+    @include font-rem(38px, 42px);
+  }
+}
+
+h4,
+.h4 {
+  @include font-rem(32px, 34px);
+  @include bp(tablet-sm) {
+    @include font-rem(20px, 26px);
+  }
+}
+
+h5,
+.h5 {
+  @include font-rem(24px, 28px);
+  @include bp(tablet-sm) {
+    @include font-rem(20px, 26px);
+  }
+}
+
+h6,
+.h6 {
+  @include font-rem(18px, 22px);
+  @include bp(tablet-sm) {
+    @include font-rem(14px, 18px);
+  }
+}
+
+.inner-header {
+  @include font-rem(52px, 60px);
+  font-weight: 700;
+  padding-bottom: 30px;
+  @include bp(tablet-sm) {
+    @include font-rem(26px, 28px);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+a {
+  color: color(primary, ps_secondary);
+  transition: 0.3s;
+  text-decoration: none;
+  &:hover {
+    text-decoration: inherit;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding: 50px 0;
+
+  @include bp(tablet-sm) {
+    padding: 25px 0;
+  }
+}

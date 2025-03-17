@@ -1,0 +1,44 @@
+footer {
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    &.footer-section {
+        background-color: color(primary, ps_secondary);
+        .footer-contact-details {
+            text-align: left;
+            img {
+                background: #fff;
+                padding: 8px;
+                border-radius: 5px;
+            }
+        }
+        .social-media {
+            display: flex;
+            margin: 0;
+            li {
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .footer-background-overlay {
+        background-image: url(../images/footer/back.png);
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.03;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        transition:
+            background 0.3s,
+            border-radius 0.3s,
+            opacity 0.3s;
+        z-index: -1;
+    }
+
+    a {
+        color: #fff;
+    }
+}
